@@ -42,7 +42,7 @@
     
     return distance
   ```
-  * Analysis
+* Analysis
   
       - Best Case
   
