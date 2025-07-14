@@ -44,24 +44,22 @@
   ```
 * Analysis
   
-      - Best Case
-  
-        Scenario: The graph is structured such that the shortest paths are found early
-        (e.g., a linear graph where the source is at one end).
-        Time Complexity: $ O(V^2) $.
-        Explanation: The algorithm iterates $ V $ times to select the minimum distance
-        vertex and checks all $ V $ vertices for updates, resulting in $ O(V^2) $ per iteration.
-        The best case still requires checking all unvisited vertices.
+  - Best Case <br>
+    Scenario: The graph is structured such that the shortest paths are found early<br>
+    (e.g., a linear graph where the source is at one end).<br><br>
+    Time Complexity: $ O(V^2) $.<br><br>
+    Explanation: The algorithm iterates $ V $ times to select the minimum distance<br>
+    vertex and checks all $ V $ vertices for updates, resulting in $ O(V^2) $ per iteration.<br>
+    The best case still requires checking all unvisited vertices.<br><br>
 
-      - Worst Case
-
-        Scenario: The graph is complete (all $ V(V-1)/2 $ edges), requiring updates
-        through all vertices.
-        Time Complexity: $ O(V^2) $.
-        Explanation: The outer loop runs $ V $ times, and the inner loop to find the minimum
-        and update distances takes $ O(V) $ per iteration, leading to $ O(V^2) $ total.
-        This is with an adjacency matrix; using a priority queue with an adjacency list can improve
-        it to $ O((V + E) \log V) $.
+  - Worst Case<br>
+    Scenario: The graph is complete (all $ V(V-1)/2 $ edges), requiring updates<br>
+    through all vertices.<br><br>
+    Time Complexity: $ O(V^2) $.<br><br>
+    Explanation: The outer loop runs $ V $ times, and the inner loop to find the minimum<br>
+    and update distances takes $ O(V) $ per iteration, leading to $ O(V^2) $ total.<br>
+    This is with an adjacency matrix; using a priority queue with an adjacency list can improve<br>
+    it to $ O((V + E) \log V) $.<br>
 
 * Additional Notes
   
